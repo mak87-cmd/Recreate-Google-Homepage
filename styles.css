@@ -1,16 +1,28 @@
 .header {
     color: black; 
 }
-.container {
+.flex-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
-.container > div {
+.flex-container > div {
     margin: 10px;
 }
 footer {
     color: #414141;
     position: absolute;
     bottom: 0%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-template-rows: 2fr repeat(3, 1fr) 2fr;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
